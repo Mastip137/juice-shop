@@ -37,6 +37,7 @@ module.exports = function servePublicFiles () {
     }
   }
 
+
   function verifySuccessfulPoisonNullByteExploit (file: string) {
     challengeUtils.solveIf(challenges.easterEggLevelOneChallenge, () => { return file.toLowerCase() === 'eastere.gg' })
     challengeUtils.solveIf(challenges.forgottenDevBackupChallenge, () => { return file.toLowerCase() === 'package.json.bak' })
